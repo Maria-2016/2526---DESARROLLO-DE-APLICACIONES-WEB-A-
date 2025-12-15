@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana 3 - HTML5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Mi Página Web con HTML5</h1>
+        <p><strong>Asignatura:</strong> Desarrollo Web</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#contenido">Contenido</a></li>
+            <li><a href="#multimedia">Multimedia</a></li>
+            <li><a href="#formulario">Formulario</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <!-- SECCIÓN CONTENIDO -->
+        <section id="contenido">
+            <h2>Contenido Principal</h2>
+
+            <article>
+                <h3>Etiquetas semánticas</h3>
+                <p>
+                    HTML5 utiliza <strong>etiquetas semánticas</strong> que permiten
+                    organizar mejor la información y mejorar la <em>accesibilidad</em>
+                    de las páginas web.
+                </p>
+            </article>
+
+            <article>
+                <h3>Listas en HTML</h3>
+
+                <p>Lista ordenada:</p>
+                <ol>
+                    <li>Planificación</li>
+                    <li>Desarrollo</li>
+                    <li>Publicación</li>
+                </ol>
+
+                <p>Lista desordenada:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>GitHub</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- SECCIÓN MULTIMEDIA -->
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+
+            <article>
+                <h3>Imagen institucional UEA</h3>
+                <img src="assets/img/uea.jpg" alt="Universidad Estatal Amazónica" width="350">
+            </article>
+
+            <article>
+                <h3>Video institucional</h3>
+                <iframe 
+                    width="560" 
+                    height="315"
+                    src="https://www.youtube.com/embed/9pBTDNg9Q0c"
+                    title="Video UEA"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </article>
+        </section>
+
+        <!-- SECCIÓN TABLA -->
+        <section>
+            <h2>Tabla de tecnologías</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Uso</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Estructura</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Estilos</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Interactividad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SECCIÓN FORMULARIO -->
+        <section id="formulario">
+            <h2>Formulario de contacto</h2>
+
+            <form>
+                <label>Nombre:</label><br>
+                <input type="text" required><br><br>
+
+                <label>Correo:</label><br>
+                <input type="email" required><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- ENLACE EXTERNO -->
+        <section>
+            <h2>Enlace externo</h2>
+            <a href="https://www.github.com" target="_blank">Visitar GitHub</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Semana 3 | HTML5</p>
+    </footer>
+
+</body>
+</html>
+
