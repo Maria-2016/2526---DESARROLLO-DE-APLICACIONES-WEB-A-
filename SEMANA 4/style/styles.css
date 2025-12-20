@@ -1,0 +1,47 @@
+body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+.encabezado {
+    background: linear-gradient(90deg, blue, purple);
+    color: white;
+}
+
+/* TARJETAS */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGEN EN LA CARD */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* BOTÓN PERSONALIZADO */
+.btn-primary {
+    background-color: red !important;
+    border-color: red !important;
+}
+
+.btn-primary:hover {
+    background-color: darkred !important;
+    border-color: darkred !important;
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* MEDIA QUERY PARA PANTALLAS PEQUEÑAS */
+@media (max-width: 768px) {
+    body {
+        background-color: white;
+    }
+}
