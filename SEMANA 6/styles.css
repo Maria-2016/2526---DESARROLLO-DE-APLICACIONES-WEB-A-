@@ -1,0 +1,67 @@
+/* Estilo general de la página */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 30px;
+    min-height: 100vh;
+}
+
+/* Título */
+h2 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del formulario */
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    width: 380px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 2px solid #cccccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Campo válido */
+.valido {
+    border-color: #2ecc71;
+    background-color: #eafaf1;
+}
+
+/* Campo inválido */
+.invalido {
+    border-color: #e74c3c;
+    background-color: #fdecea;
+}
+
+/* Mensajes de error */
+.error {
+    color: #e74c3c;
+    font-size: 12px;
+}
+
+/* Botones */
+button {
+    margin
+
+    
