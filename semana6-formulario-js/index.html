@@ -4,49 +4,58 @@
     <meta charset="UTF-8">
     <title>Formulario con Validaciones Dinámicas</title>
 
-    <!-- Enlace al archivo de estilos -->
+    <!-- Enlace al archivo CSS para los estilos del formulario -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<!-- Contenedor general para colocar el título arriba y el formulario debajo -->
+<div class="contenedor">
+
+    <!-- Título del formulario con fondo de color -->
     <h2>Formulario de Registro</h2>
 
+    <!-- Formulario principal -->
     <form id="formulario">
 
-        <!-- Campo Nombre -->
+        <!-- Campo Nombre (obligatorio, mínimo 3 caracteres) -->
         <label>Nombre:</label>
         <input type="text" id="nombre">
+        <!-- Mensaje de error dinámico -->
         <small class="error" id="errorNombre"></small>
 
-        <!-- Campo Correo -->
+        <!-- Campo Correo electrónico (validación con expresión regular) -->
         <label>Correo electrónico:</label>
         <input type="email" id="correo">
         <small class="error" id="errorCorreo"></small>
 
-        <!-- Campo Contraseña -->
+        <!-- Campo Contraseña (mínimo 8 caracteres, número y carácter especial) -->
         <label>Contraseña:</label>
         <input type="password" id="password">
         <small class="error" id="errorPassword"></small>
 
-        <!-- Confirmar Contraseña -->
+        <!-- Confirmación de contraseña (debe coincidir con la anterior) -->
         <label>Confirmar contraseña:</label>
-        <input type="password" id="confirmPassword">
-        <small class="error" id="errorConfirmPassword"></small>
+        <input type="password" id="confirmar">
+        <small class="error" id="errorConfirmar"></small>
 
-        <!-- Campo Edad -->
+        <!-- Campo Edad (mayor o igual a 18 años) -->
         <label>Edad:</label>
         <input type="number" id="edad">
         <small class="error" id="errorEdad"></small>
 
-        <!-- Botones -->
-        <button type="submit" id="btnEnviar" disabled>Enviar</button>
-        <button type="reset">Reiniciar</button>
-
+        <!-- Botones del formulario -->
+        <div class="botones">
+            <!-- Botón enviar deshabilitado hasta que todo sea válido -->
+            <button type="submit" id="enviar" disabled>Enviar</button>
+            <!-- Botón para reiniciar el formulario -->
+            <button type="reset">Reiniciar</button>
+        </div>
     </form>
+</div>
 
-    <!-- Enlace al archivo JavaScript -->
-    <script src="script.js"></script>
+<!-- Enlace al archivo JavaScript -->
+<script src="script.js"></script>
+
 </body>
 </html>
-
-<!-- Actualización Semana 6 -->
