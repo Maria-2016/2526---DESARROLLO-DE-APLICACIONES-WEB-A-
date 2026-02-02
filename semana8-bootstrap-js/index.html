@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecuador Travel - Bootstrap y JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- 🔷 ENCABEZADO CON MENÚ -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Ecuador Travel</a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-4" id="inicio">
+
+    <!-- 🔷 CARRUSEL BOOTSTRAP -->
+    <div id="carouselDestinos" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselDestinos" data-bs-slide-to="2"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://picsum.photos/id/1018/900/350" class="d-block w-100">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h5>Galápagos</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/1015/900/350" class="d-block w-100">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h5>Baños</h5>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://picsum.photos/id/1022/900/350" class="d-block w-100">
+                <div class="carousel-caption bg-dark bg-opacity-50 rounded">
+                    <h5>Cotopaxi</h5>
+                </div>
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" data-bs-target="#carouselDestinos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carouselDestinos" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- 🔷 TABLA DE PRODUCTOS (destinos) -->
+    <h2 id="destinos">Ofertas Turísticas</h2>
+    <table class="table table-striped table-hover text-center">
+        <thead class="table-dark">
+            <tr>
+                <th>Destino</th>
+                <th>Duración</th>
+                <th>Precio</th>
+                <th>Cupos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Galápagos</td>
+                <td>5 días / 4 noches</td>
+                <td>$1200</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Baños</td>
+                <td>3 días / 2 noches</td>
+                <td>$350</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Cotopaxi</td>
+                <td>2 días / 1 noche</td>
+                <td>$180</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 🔷 BOTÓN ALERTA JS -->
+    <button class="btn btn-warning my-4" onclick="mostrarAlerta()">
+        Ver Promoción Especial
+    </button>
+
+    <!-- 🔷 FORMULARIO CON VALIDACIÓN -->
+    <h2 id="contacto">Reserva tu viaje</h2>
+    <form id="formulario">
+        <div class="mb-3">
+            <label>Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+            <small class="text-danger" id="errorNombre"></small>
+        </div>
+
+        <div class="mb-3">
+            <label>Correo electrónico</label>
+            <input type="email" class="form-control" id="correo">
+            <small class="text-danger" id="errorCorreo"></small>
+        </div>
+
+        <div class="mb-3">
+            <label>Mensaje</label>
+            <textarea class="form-control" id="mensaje"></textarea>
+            <small class="text-danger" id="errorMensaje"></small>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+<!-- 🔷 PIE DE PÁGINA -->
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    © 2026 - María Rocío Vera Utrera | Ecuador Travel
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
