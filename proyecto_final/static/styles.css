@@ -1,0 +1,96 @@
+/* ===== ESTILOS GENERALES ===== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* ===== ENCABEZADO ===== */
+
+header {
+    background-color: #1e3d59; /* Azul elegante */
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#titulo-tienda {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* ===== MENÚ ===== */
+
+nav {
+    background-color: #ff6e40; /* Naranja moderno */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #ff3d00;
+}
+
+/* ===== CONTENIDO PRINCIPAL ===== */
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== TÍTULOS ===== */
+
+h2 {
+    color: #1e3d59;
+}
+
+/* ===== BOTONES ===== */
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1e3d59;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.boton:hover {
+    background-color: #16324a;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
